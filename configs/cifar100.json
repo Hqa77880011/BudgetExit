@@ -1,0 +1,45 @@
+{
+  "dataset": "cifar100",
+  "root": "data/raw",
+  "data": "data/prepared",
+  "output": "outputs/main",
+  "checkpoint": "",
+  "device": "auto",
+  "image_size": 32,
+  "epochs": 100,
+  "batch_size": 64,
+  "lr": 0.1,
+  "weight_decay": 0.0005,
+  "alpha": 0.5,
+  "lambda_depth": 0.2,
+  "lambda_budget": 2.0,
+  "lambda_order": 0.5,
+  "budgets": [
+    0.4,
+    0.6,
+    0.8
+  ],
+  "latency_samples": 100,
+  "latency_warmup": 10,
+  "variant": "budgetexit",
+  "variants": [
+    "full",
+    "entropy",
+    "branchynet",
+    "bound_only",
+    "budget_input",
+    "depth",
+    "budgetexit"
+  ],
+  "seed": 2026,
+  "seeds": [
+    2026,
+    2027,
+    2028
+  ],
+  "val_size": 5000,
+  "limit": 0,
+  "max_steps": 0,
+  "workers": 0,
+  "threads": 4
+}
